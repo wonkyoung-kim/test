@@ -465,7 +465,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background: url("/assets/images/ico-more.png");
+  background: url("../images/ico-more.png");
   background-size: cover;
 }
 @media (max-width: 768px) {
@@ -489,7 +489,7 @@ body {
   top: 0;
   width: 100%;
   opacity: 0;
-  background: url("/assets/images/bg-visual.png") no-repeat;
+  background: url("../images/bg-visual.png") no-repeat;
   background-size: cover;
   background-position: right bottom;
   transition: opacity 1s;
@@ -645,7 +645,7 @@ body {
   display: inline-flex;
 }
 .sc-event .event-slide .swiper-slide {
-  background: url("/assets/images/bg-event.png") no-repeat;
+  background: url("../images/bg-event.png") no-repeat;
   background-size: cover;
 }
 .sc-event .event-slide .swiper-slide a {
@@ -719,7 +719,7 @@ body {
   width: 24px;
   height: 24px;
   margin-left: 16px;
-  background: url("/assets/images/btn-more.png") no-repeat;
+  background: url("../images/btn-more.png") no-repeat;
   background-size: cover;
 }
 .sc-event .event-slide .btn {
@@ -730,7 +730,7 @@ body {
   transform: translateY(-50%);
   width: 45px;
   height: 45px;
-  background: url("/assets/images/ico-event-arrow.png") no-repeat;
+  background: url("../images/ico-event-arrow.png") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
@@ -927,7 +927,7 @@ body {
   display: inline-block;
   width: 13px;
   height: 20px;
-  background: url("/assets/images/ico-arrow.png") no-repeat;
+  background: url("../images/ico-arrow.png") no-repeat;
   background-size: cover;
 }
 .sc-journal .journal-info .journal-item:nth-child(1)::after {
@@ -936,7 +936,7 @@ body {
   width: 100%;
   height: 3px;
   margin-top: 26px;
-  background: url("/assets/images/img-dashed.png") no-repeat;
+  background: url("../images/img-dashed.png") no-repeat;
   background-size: cover;
 }
 @media (max-width: 1099px) {
@@ -1012,21 +1012,21 @@ body {
   background: #18417f;
 }
 .sc-quick .quick-item a.link-ultrasound-intro::before {
-  background: url("/assets/images/ico-quick1.png") no-repeat left center;
+  background: url("../images/ico-quick1.png") no-repeat left center;
   background-size: contain;
 }
 .sc-quick .quick-item a.link-ultrasound-edu {
   background: #ec8735;
 }
 .sc-quick .quick-item a.link-ultrasound-edu::before {
-  background: url("/assets/images/ico-quick2.png") no-repeat left center;
+  background: url("../images/ico-quick2.png") no-repeat left center;
   background-size: contain;
 }
 .sc-quick .quick-item a.link-ultrasound-certifi {
   background: #0090a5;
 }
 .sc-quick .quick-item a.link-ultrasound-certifi::before {
-  background: url("/assets/images/ico-quick3.png") no-repeat left center;
+  background: url("../images/ico-quick3.png") no-repeat left center;
   background-size: contain;
 }
 .sc-quick .quick-item a.link-membership {
@@ -1034,7 +1034,7 @@ body {
   background: #4a5a71;
 }
 .sc-quick .quick-item a.link-membership::before {
-  background: url("/assets/images/ico-quick4.png") no-repeat left center;
+  background: url("../images/ico-quick4.png") no-repeat left center;
   background-size: contain;
 }
 .sc-quick .quick-item .title {
@@ -1112,7 +1112,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background: url("/assets/images/ico-spon-arrow.png") no-repeat;
+  background: url("../images/ico-spon-arrow.png") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
