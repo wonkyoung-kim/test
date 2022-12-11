@@ -135,9 +135,9 @@
                 </ul>
               </div>
               <div class="pagination" role="tablist">
-                <button class="active" role="tab" aria-selected="true" data-target="#cont1"></button>
-                <button role="tab" aria-selected="false" data-target="#cont2"></button>
-                <button role="tab" aria-selected="false" data-target="#cont3"></button>
+                <button class="active" role="tab" aria-selected="true" data-target="#cont1"><span class="blind">탭버튼1</span></button>
+                <button role="tab" aria-selected="false" data-target="#cont2"><span class="blind">탭버튼2</span></button>
+                <button role="tab" aria-selected="false" data-target="#cont3"><span class="blind">탭버튼3</span></button>
               </div>
             </div>
           </section>
@@ -309,9 +309,12 @@
           </address>
         </div>
         <div class="footer-right">
-          <select class="relsite-select">
-            <option value="관련사이트">관련사이트</option>
-          </select>
+          <form>
+            <label class="blind">관련사이트</label>
+            <select id="rel-site" class="relsite-select">
+              <option value="관련사이트">관련사이트</option>
+            </select>
+          </form>
           <a href="" class="link-secured"><img src="./assets/images/img-secured.png" alt="SSL 인증서"></a>
         </div>
       </div>

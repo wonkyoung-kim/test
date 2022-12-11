@@ -136,7 +136,7 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background: url("/assets/images/ico-mobile-menu.png") no-repeat;
+  background: url("../images/ico-mobile-menu.png") no-repeat;
   background-size: contain;
   cursor: pointer;
 }
@@ -345,7 +345,7 @@ body {
   border: 1px solid #c1c1c1;
   color: #6f6f6f;
   font-size: 12px;
-  background: #fff url("/assets/images/ico-select.png") no-repeat right 15px center;
+  background: #fff url("../images/ico-select.png") no-repeat right 15px center;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
