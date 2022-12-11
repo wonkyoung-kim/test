@@ -1,15 +1,47 @@
 $(function(){
-  // gnb 마우스오버시 서브메뉴 보이게 처리 
-  $('.gnb-item').mouseover(function(){
-    $(this).addClass('active');
-    $('.gnb-item').children('.sub-list').show();
-  })
-  $('.gnb-item').mouseout(function(){
-    $(this).removeClass('active');
-    $('.gnb-item').children('.sub-list').hide();
+
+  // 반응형 gnb처리
+  $('.btn-gnb-mo').click(function(){
+    $('.gnb').toggle();
   })
 
+  $(window).resize(function(){
+    let windowWidth = $(window).width()
+    
+    if(windowWidth > 1100) {   
+      // PC에서 실행할 화면     
+      $('.gnb-item').off();
+      $('.gnb').show().find('.gnb-item').removeClass('active').find('.sub-list').hide();
 
+      $('.gnb-item').mouseover(function(e){
+        e.preventDefault();
+        $(this).addClass('active');
+        $('.gnb-item').find('.sub-list').show();
+      })
+      $('.gnb-item').mouseout(function(e){
+        e.preventDefault();
+        $(this).removeClass('active');
+        $('.gnb-item').find('.sub-list').hide();
+      })
+    } else {
+      // 모바일에서 실행할 화면
+      $('.gnb-item').off();
+      $('.gnb').hide();
+      
+      $('.gnb-item').click(function(e){
+        e.preventDefault();
+        if($(this).hasClass('active')){
+          $(this).removeClass('active').find('.sub-list').stop().slideUp();
+        } else {
+          $('.gnb-item').removeClass('active').find('.sub-list').stop().slideUp();
+          $(this).addClass('active').find('.sub-list').stop().slideDown();
+        }
+      })
+    }
+    
+  })
+  $(window).resize();
+  
   // 버튼누르면 컨텐츠 보여주기 
   $('.sc-visual .pagination button').click(function(){
     target = $(this).data('target');

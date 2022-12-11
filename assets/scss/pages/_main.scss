@@ -10,7 +10,11 @@
     padding: 9px 0;
   }
   @include desktop {
+    padding-top: 100px;
     .inner { width: 100%; gap: 5px; padding: 5px; }
+  }
+  @include tablet {
+    padding-top: 46px;
   }
 }
 .group-flex {

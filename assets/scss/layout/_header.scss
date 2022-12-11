@@ -1,4 +1,7 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
   &-top {
     height: 100px;
     border-bottom: 1px solid #e3e3e3;
@@ -118,11 +121,10 @@
     .sub-list {
       display: none;
       position: absolute;
-      left: 0; top: -1px;
+      left: 0; top: 80px;
       z-index: 10;
       width: 100%; height: 240px;
       padding: 28px 20px;
-      margin-top: 80px;
       background: #4c4b4b;
       border-right: 1px solid rgba(#f7f7f7, 10%);
     }
@@ -154,7 +156,9 @@
       }
     }
   }
-  @include desktop {
+  @include desktop {   
+    position: fixed; left: 0; top: 0; z-index: 10; width: 100%;
+    
     .header-top .inner {width: 100%;}
     .header-top .menu-list {display: none;}
     .header-top .link-lang {display: none;}
@@ -185,12 +189,17 @@
     }
     .gnb .sub-list {
       position: relative;
+      top: 0;
       height: auto;
-      margin-top: 0;
     }
   }
   @include tablet {
     .header-top {height: 46px;}
     .header-top .logo {display: block; width: 122px; height: 26px;}
+
+    .gnb { width: 100%; height: calc(100vh - 46px); }
+    .gnb .gnb-item > a { height: 40px; font-size: 14px;}
+    .gnb .sub-list {padding: 14px 10px;}
+    .gnb .sub-item a {font-size: 12px;}
   }
 }

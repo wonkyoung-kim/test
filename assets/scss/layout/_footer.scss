@@ -43,8 +43,11 @@
   &-right {
     display: flex;
     gap: 14px;
+    .select-box {
+      width: 248px;
+    }
     .relsite-select {
-      width: 248px; height: 28px;
+      width: 100%; height: 28px;
       padding: 0 15px;
       border: 1px solid #c1c1c1;
       color: #6f6f6f;
@@ -57,7 +60,7 @@
     .inner { flex-direction: column; width: 100%; padding: 10px 20px 15px; }
     .footer-left { order: 2; margin-top: 13px; }
     .footer-right {order: 1;}
-    .footer-right .relsite-select {width: 100%;}
+    .footer-right .select-box {width: 100%;}
     .footer-right .link-secured {display: none;}
   }
   @include tablet {
